@@ -1,0 +1,14 @@
+# UART0 sur GPIO14/15
+enable_uart=1
+dtparam=uart0=on
+dtoverlay=disable-bt
+
+# GPU et affichage
+dtoverlay=vc4-fkms-v3d
+disable_overscan=1
+core_freq=250
+force_turbo=1
+
+# Audio
+dtparam=audio=off
+# Wi-Fi actif par défaut
